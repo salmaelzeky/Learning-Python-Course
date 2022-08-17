@@ -11,18 +11,18 @@ def main():
         result = "x > y"
     else: 
         result = "x = y"    
-    print(result)
     
     result = "x < y" if x < y else "x > y"
-    print(result)
-    
-    value = "one"
-   
+
+    value = "42"
     match value:
         case "one" : 
             result = 1 
         case "two" : 
             result = 2
+        case _:
+            result = -1
+    print(result)
             
 if __name__ == "__main__":
     main()
